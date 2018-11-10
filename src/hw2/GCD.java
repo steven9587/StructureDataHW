@@ -27,7 +27,7 @@ public class GCD {
 
 	}
 
-	// 遞迴方法
+	// 遞迴方法(讓別人呼叫自己)
 	public static int GCD(int number1, int number2) {
 		if (a > b) {
 			a = a - b;

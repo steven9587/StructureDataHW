@@ -28,7 +28,7 @@ public class NFactorial {
 		}
 	}
 
-	// 遞迴方法
+	// 遞迴方法(讓別人呼叫自己)
 	public static int factorial(int n) {
 		answer = answer * n;
 		return answer;
