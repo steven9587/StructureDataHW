@@ -10,7 +10,10 @@ public class NFactorial {
 		System.out.print("清輸入階層數(n):");
 		Scanner scanner = new Scanner(System.in);
 		int n = scanner.nextInt();
-		while (n >= 0) {
+		if(n<0) {
+			System.out.println("輸入錯誤,請輸入>=0的數!");
+		}else {
+			while (n >= 0) {
 			if (n == 0) {
 				answer = answer * 1;
 				n--;
@@ -20,6 +23,7 @@ public class NFactorial {
 			}
 		}
 		System.out.println("答案："+answer);
+		}
 	}
 	
 	public static int factorial(int n) {
