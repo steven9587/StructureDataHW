@@ -1,7 +1,6 @@
 package hw2;
 
 import java.util.ArrayList;
-import java.util.function.DoubleToIntFunction;
 
 public class Subcollection {
 	public static String binarytemp;
