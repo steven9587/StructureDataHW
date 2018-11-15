@@ -2,10 +2,10 @@ package hw2;
 
 import java.util.Scanner;
 
-public class Combination {
+public class AckermannNumber {
 
 	public static void main(String[] args) {
-		System.out.print("請輸入C(n,m):");
+		System.out.print("請輸入A(n,m):");
 		// 讀取輸入資料
 		Scanner scanner = new Scanner(System.in);
 		String line = scanner.nextLine();
@@ -17,15 +17,17 @@ public class Combination {
 		} else {
 			int answer = 0;
 			answer = answer + operation(n, m);
-			System.out.print("(" + n + "," + m + ") = " + answer);
+			System.out.print("A(" + n + "," + m + ") = " + answer);
 		}
 	}
 
 	public static int operation(int a, int b) {
-		if (a == b || b == 0) {
-			return 1;
+		if (a == 0) {
+			return b + 1;
+		} else if (b == 0) {
+			return operation(a - 1, 1);
 		} else {
-			return operation(a - 1, b) + operation(a - 1, b - 1);
+			return operation(a-1, operation(a, b-1));
 		}
 	}
 
