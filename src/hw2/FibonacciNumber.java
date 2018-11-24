@@ -1,5 +1,6 @@
 package hw2;
 
+//題目:費氏數列第N項
 import java.util.Scanner;
 
 public class FibonacciNumber {

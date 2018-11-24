@@ -1,5 +1,6 @@
 package hw2;
 
+//題目:阿克曼函數的運算
 import java.util.Scanner;
 
 public class AckermannNumber {
@@ -21,13 +22,16 @@ public class AckermannNumber {
 		}
 	}
 
+	// 遞迴方法(自己呼叫自己)
 	public static int operation(int a, int b) {
 		if (a == 0) {
 			return b + 1;
 		} else if (b == 0) {
+			// 自己呼叫自己
 			return operation(a - 1, 1);
 		} else {
-			return operation(a-1, operation(a, b-1));
+			// 自己呼叫自己
+			return operation(a - 1, operation(a, b - 1));
 		}
 	}
 

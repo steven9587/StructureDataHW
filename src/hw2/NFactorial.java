@@ -1,5 +1,6 @@
 package hw2;
 
+//題目:N階層運算
 import java.util.Scanner;
 
 public class NFactorial {
@@ -8,7 +9,7 @@ public class NFactorial {
 
 	public static void main(String[] args) {
 		// 輸入&讀取資料
-		System.out.print("清輸入階層數(n):");
+		System.out.print("請輸入階層數(n):");
 		Scanner scanner = new Scanner(System.in);
 		int n = scanner.nextInt();
 		if (n < 0) {

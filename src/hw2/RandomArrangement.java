@@ -1,5 +1,6 @@
 package hw2;
 
+//題目:N項資料任意排列
 import java.util.ArrayList;
 import java.util.Random;
 

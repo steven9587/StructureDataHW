@@ -1,5 +1,6 @@
 package hw2;
 
+//題目:最大公因數(GCD)
 import java.util.Scanner;
 
 public class GCD {

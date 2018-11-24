@@ -1,5 +1,6 @@
 package hw2;
 
+//題目:產生集合S的子集合
 import java.util.ArrayList;
 
 public class Subcollection {
@@ -61,6 +62,5 @@ public class Subcollection {
 		} else {
 			return finaltemp;
 		}
-
 	}
 }

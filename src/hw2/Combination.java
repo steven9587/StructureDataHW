@@ -1,5 +1,6 @@
 package hw2;
 
+//題目:組合公式的運算
 import java.util.Scanner;
 
 public class Combination {
@@ -20,11 +21,12 @@ public class Combination {
 			System.out.print("(" + n + "," + m + ") = " + answer);
 		}
 	}
-
+	// 遞迴方法(自己呼叫自己)
 	public static int operation(int a, int b) {
 		if (a == b || b == 0) {
 			return 1;
 		} else {
+			// 自己呼叫自己
 			return operation(a - 1, b) + operation(a - 1, b - 1);
 		}
 	}
